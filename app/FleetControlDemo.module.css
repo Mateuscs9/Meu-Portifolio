@@ -1,0 +1,108 @@
+.preview {
+  width: min(100%, 440px);
+  margin: 0 auto;
+  container-type: inline-size;
+}
+
+.screen {
+  overflow: hidden;
+  border: 1px solid #223e56;
+  border-radius: 24px;
+  color: #f4f5fa;
+  background: #001222;
+  font-family: Roboto, Arial, sans-serif;
+  box-shadow: 0 28px 75px #0006;
+}
+
+.screen button { font: inherit; }
+.screen button:disabled { opacity: 1; cursor: default; }
+.screen svg { width: 100%; height: 100%; display: block; }
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 3cqw;
+  padding: 5cqw 3.2cqw 2.6cqw;
+  border-bottom: 1px solid #223c53;
+}
+
+.menu {
+  display: grid;
+  place-items: center;
+  flex: 0 0 10.2cqw;
+  width: 10.2cqw;
+  height: 10.2cqw;
+  padding: 2.8cqw;
+  border: 0;
+  border-radius: 50%;
+  color: #f5f7ff;
+  background: #193b5e;
+}
+
+.brand { flex: 1; min-width: 0; }
+.brand strong { display: block; color: #419afa; font-size: 3.65cqw; white-space: nowrap; }
+.brand span { display: block; margin-top: .4cqw; font-size: 2.5cqw; color: #c7d2df; font-weight: 600; }
+.account { display: flex; align-items: center; gap: 2.5cqw; }
+.account strong { display: block; font-size: 3cqw; }
+.account div span { display: block; margin-top: .5cqw; color: #c7d2df; font-size: 2.6cqw; }
+.avatar { width: 9.8cqw; height: 9.8cqw; padding: .7cqw; overflow: hidden; border: 1px solid #075650; border-radius: 50%; color: #c2c4c4; background: linear-gradient(110deg,#303b40,#50514e); }
+
+.content { padding: 4cqw 3.2cqw 10cqw; }
+.greeting h4 { margin: 0; font-size: 5cqw; line-height: 1.25; letter-spacing: -.02em; }
+.greeting p { margin: 4.1cqw 0 6.8cqw; color: #b4c5d7; font-size: 3.4cqw; line-height: 1.4; }
+.panel { padding: 3.8cqw; border: 1px solid #29465f; border-radius: 4cqw; background: linear-gradient(135deg,#0a2035,#0a1c2e); }
+.panel h5 { margin: 0; font-size: 4cqw; line-height: 1.25; letter-spacing: -.025em; }
+.month { margin: 4.5cqw 0 4.2cqw; font-size: 2.8cqw; color: #b4c5d7; }
+.metrics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2.2cqw; }
+.metric { display: flex; flex-direction: column; align-items: center; padding: 3cqw .8cqw; border: 1px solid #304a62; border-radius: 3.9cqw; background: linear-gradient(135deg,#122a41,#142332); }
+.metricIcon { display: grid; place-items: center; width: 10.3cqw; height: 10.3cqw; padding: 2.4cqw; border-radius: 3.1cqw; background: #1c436d; }
+.metric strong { margin-top: 1.7cqw; font-size: 4.4cqw; line-height: 1.25; }
+.metric > span:last-child { margin-top: 1.3cqw; font-size: 3.2cqw; line-height: 1.2; white-space: nowrap; }
+.register { display: flex; align-items: center; justify-content: center; gap: 2.8cqw; width: 100%; min-height: 13.2cqw; margin: 2cqw 0 3.8cqw; padding: 3cqw; border: 1px solid #428df5; border-radius: 4.2cqw; background: linear-gradient(110deg,#4a9cff,#0649cb); color: white; }
+.register svg { width: 4.5cqw; height: 4.5cqw; }
+.register { cursor:pointer; }
+.register:hover { filter:brightness(1.1); }
+.register:focus-visible { outline:2px solid #b7dbff; outline-offset:4px; }
+.register span { font-size: 3.3cqw; font-weight: 700; }
+.allTrips { display: block; margin: 3.5cqw 0 2.8cqw; padding: 0; border: 0; color: #459dff; background: none; text-decoration: underline; font-size: 3cqw !important; font-weight: 700 !important; }
+.tripList { display: grid; gap: 2.2cqw; margin: 0; padding: 0; list-style: none; }
+.trip { display: grid; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; gap: 3cqw; padding: 2.8cqw 2.6cqw; border: 1px solid #2c4961; border-radius: 4cqw; background: linear-gradient(120deg,#142a40,#152a3d); }
+.closed { display: inline-flex; align-items: center; gap: 1.8cqw; padding: 2.2cqw 2.4cqw; color: #ffa3a3; background: #401d24; border-radius: 4cqw; font-size: 2.8cqw; font-weight: 700; white-space: nowrap; }
+.closed i { width: 2.1cqw; height: 2.3cqw; border-radius: 50%; background: #ffa3a3; }
+.tripInfo { min-width: 0; }
+.tripInfo strong { display: block; font-size: 2.9cqw; line-height: 1.25; letter-spacing: -.025em; overflow-wrap:anywhere; }
+.tripInfo span { display: block; color: #b6c9dc; font-size: 2.65cqw; line-height: 1.35; }
+.distance { font-size: 3.3cqw; white-space: nowrap; }
+.caption { margin-top: 16px; color: #8699af; font-size: 11px; line-height: 1.6; text-align: center; }
+.demoStates { display:flex; gap:8px; margin-bottom:14px; }
+.demoStates button { flex:1; padding:10px; border:1px solid #29465f; border-radius:8px; color:#b4c5d7; background:#081726; cursor:pointer; font-size:14px; }
+.demoStates button[aria-pressed="true"] { border-color:#419afa; color:white; background:#163b66; }
+.demoStates button:focus-visible { outline:2px solid #70b5ff; outline-offset:3px; }
+.activeTrip { padding:4cqw; margin-top:4cqw; border:1px solid #34654e; border-radius:4cqw; background:linear-gradient(120deg,#123625,#0c1c29); }
+.activeBadge { display:inline-block; padding:1.8cqw 2.8cqw; margin-bottom:3cqw; border-radius:5cqw; color:#83dfb0; background:#173b29; font-size:3.3cqw; font-weight:700; }
+.activeTrip>strong { display:block; font-size:3cqw; line-height:1.4; }
+.activeTrip p { margin:2.5cqw 0 0; color:#b4c5d7; font-size:2.8cqw; }
+.menu { cursor:pointer; }
+.appNav { display:flex; gap:2cqw; padding:3cqw; background:#0c2035; border-bottom:1px solid #29465f; }
+.appNav button { flex:1; padding:2.5cqw; border:1px solid #29465f; border-radius:2cqw; background:#193b5e; color:white; cursor:pointer; font-size:3.2cqw; }
+.appNav button[aria-pressed="true"] { border-color:#419afa; }
+.menu:focus-visible,.appNav button:focus-visible { outline:2px solid #b7dbff; outline-offset:3px; }
+.maintenance { padding:4cqw; border:1px solid #29465f; border-radius:4cqw; background:#112235; }
+.maintenance h4 { margin:0; font-size:5cqw; }
+.maintenanceIntro { margin:4cqw 0; color:#b4c5d7; font-size:2.9cqw; line-height:1.5; }
+.maintenanceVehicle { padding:4cqw; margin-top:3cqw; border:1px solid #354b60; border-radius:4.8cqw; background:#192c40; }
+.maintenanceVehicle header { display:flex; align-items:center; gap:3cqw; }
+.maintenanceVehicle header>strong { flex:1; font-size:3.2cqw; line-height:1.3; }
+.maintenanceIcon { display:block; flex:0 0 10cqw; width:10cqw; height:10cqw; padding:2.5cqw; color:#d3e1ef; background:#20436a; border-radius:3cqw; }
+.maintenanceVehicle header .maintenanceIcon { color:#8fe2b2; background:#153d2b; }
+.noBase { padding:2cqw; border-radius:4cqw; color:#8fe2b2; background:#163b2b; font-size:3cqw; font-weight:700; white-space:nowrap; }
+.odometer { display:grid; gap:1cqw; margin:4cqw 0; padding:3cqw; border:1px solid #304962; border-radius:3.5cqw; background:#0a1b2c; }
+.odometer strong { font-size:4.7cqw; }
+.odometer span { font-size:2.8cqw; color:#b4c5d7; font-weight:600; }
+.maintenanceAlert { display:flex; align-items:center; gap:2.5cqw; margin-top:2.5cqw; padding:3cqw; border:1px solid #304962; border-radius:3.5cqw; background:#1c3045; }
+.maintenanceAlert strong { font-size:3.2cqw; line-height:1.4; }
+.maintenanceAlert p { margin:0; font-size:2.7cqw; line-height:1.4; color:#b4c5d7; font-weight:600; }
+
+@media (max-width: 480px) {
+  .screen { border-radius: 17px; }
+}
