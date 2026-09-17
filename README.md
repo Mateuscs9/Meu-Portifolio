@@ -26,25 +26,27 @@ Comecei como técnico em eletrônica. Após concluir a faculdade, direcionei min
 
 ## Estado da hospedagem
 
-A implementação atual usa React, TypeScript, CSS e vinext com Vite, preparada para Cloudflare Workers/Sites. **A migração e publicação na Vercel ainda estão pendentes.** Importar este checkout como Next.js convencional não é suficiente.
+A implementação usa Next.js App Router, React, TypeScript e CSS, com configuração para publicação na Vercel. As demos funcionam localmente no navegador e não precisam de banco de dados ou credenciais.
 
-No PowerShell, use `npm ci`, `npx vinext dev` e `npx vinext build` para evitar a sintaxe de variável de ambiente Unix dos scripts originais.
+O gerenciador de dependências é pnpm, com versão fixada em `package.json`.
 
 Não publique arquivos `.env`, credenciais, logs, builds ou prints internos. Para a primeira publicação pública, prefira apenas o estado atual revisado, sem o histórico antigo do checkout.
 
 ## Executar localmente
 
-Requisito: Node.js >= 22.13.0.
+Requisito: Node.js 22.x e pnpm 11.19.0.
 
 ```sh
-npm ci
-npx vinext dev
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
 Para gerar o build:
 
 ```sh
-npx vinext build
+pnpm build
+pnpm test
+pnpm typecheck
 ```
 
 ## Organização
@@ -55,3 +57,9 @@ npx vinext build
 - `app/FleetControlDemo.tsx`: viagens e manutenções da demo de frota.
 - `public/`: recursos visuais.
 - `tests/`: verificações do HTML renderizado.
+
+## Publicar na Vercel
+
+Importe `Mateuscs9/Meu-Portifolio`, com a raiz do repositório e preset Next.js. O arquivo `vercel.json` define os comandos de instalação e build. Não é necessário configurar segredos para executar as demos.
+
+Os metadados usam o domínio de produção informado pela Vercel. Para um domínio próprio, configure opcionalmente `NEXT_PUBLIC_SITE_URL` com a URL completa.

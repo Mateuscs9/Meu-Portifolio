@@ -8,7 +8,10 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Mateus Souza — Portfólio",
   description: "Projetos, competências e trajetória profissional de Mateus Souza.",
-  metadataBase: new URL("https://mateus-souza-portfolio.mateus-costasouza-58.chatgpt.site"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000"),
+  ),
   openGraph: {
     title: "Mateus Souza — Desenvolvedor Full Stack",
     description: "Projetos, competências e trajetória profissional de Mateus Souza.",
