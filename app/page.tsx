@@ -14,12 +14,12 @@ export default function Home() {
 
     <section className="hero-stage" id="inicio">
       <div className="hero-copy-block">
-        <div className="availability"><i /> Buscando oportunidade como desenvolvedor remoto</div>
+        <div className="availability"><i /> Disponível para novas oportunidades</div>
         <p className="eyebrow">OLÁ, EU SOU MATEUS SOUZA</p>
-        <h1>Eu transformo<br /><span>problemas reais</span><br />em produtos digitais.</h1>
-        <p className="hero-description">Desenvolvedor Full Stack em busca de uma oportunidade remota, com foco em aplicações e automações que simplificam o dia a dia.</p>
+        <h1>Transformo<br /><span>problemas reais</span><br />em soluções digitais<br />que funcionam.</h1>
+        <p className="hero-description">Desenvolvedor Full Stack com foco em aplicações e automações que simplificam o dia a dia.</p>
         <div className="hero-actions"><a className="button primary" href="#projetos">Explorar projetos <span>↓</span></a><a className="button secondary" href="#contato">Vamos conversar</a></div>
-        <a className="scroll-cue" href="#sobre"><span /> Este portfólio se apresenta enquanto você rola</a>
+
       </div>
       <div className="hero-system" aria-hidden="true">
         <div className="system-orbit orbit-a" /><div className="system-orbit orbit-b" />
@@ -29,13 +29,13 @@ export default function Home() {
     </section>
 
     <section className="story-section" id="sobre"><RevealOnScroll><div className="story-intro">
-      <p className="section-index">01 · SOBRE</p><h2>Sou o Mateus.<br /><span>Gosto de construir coisas úteis.</span></h2>
+      <p className="section-index">01 · SOBRE</p><h2>Sou o Mateus.</h2><p className="about-intro">Gosto de transformar ideias em soluções úteis, criando aplicações funcionais, bem estruturadas e pensadas para resolver problemas reais.</p>
       <div className="about-copy"><p>Comecei minha trajetória como técnico em eletrônica. Depois de concluir a faculdade, decidi focar na busca por uma oportunidade como desenvolvedor. Foi assim que cheguei à Atram, onde trabalho atualmente.</p><p>Foi lá que comecei a criar projetos por iniciativa própria, olhando para tarefas do dia a dia que poderiam ficar mais simples. O NFS-e Sync e o Controle de KM nasceram desse movimento: perceber uma necessidade e colocar a mão na massa para construir uma solução.</p></div>
       <div className="skill-cloud">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
     </div></RevealOnScroll></section>
 
     <section className="projects-story" id="projetos">
-      <div className="projects-heading"><p className="section-index">02 · PROJETOS</p><h2>Projetos reais,<br /><span>apresentados por dentro.</span></h2><p>Explore prévias dos projetos e visite seus repositórios. As demos abaixo usam dados fictícios e não disponibilizam os sistemas completos.</p></div>
+      <div className="projects-heading"><p className="section-index">02 · PROJETOS</p><h2>Projetos reais,<br /><span>apresentados por dentro.</span></h2><p>Explore prévias dos projetos e acesse seus repositórios para conhecer mais sobre o desenvolvimento. As demonstrações abaixo utilizam dados fictícios e apresentam apenas versões parciais dos sistemas.</p></div>
       <RevealOnScroll><article className="project-chapter real-project nfse-project">
         <ProjectNarrative number="01 / AUTOMAÇÃO FISCAL" title={<>NFS-e<br />Sync</>} description="Uma aplicação desktop criada para transformar uma rotina fiscal repetitiva em um fluxo automatizado, organizado e rastreável." story={[{ label:"01 · ANTES", title:"Uma consulta por vez", copy:"O setor financeiro precisava abrir cada extrato, localizar CNPJ, série, número e município, preencher o portal, lidar com captcha, baixar XML e PDF e organizar tudo manualmente para conferência." },{ label:"02 · CONSTRUÇÃO", title:"Do PDF à NFS-e", copy:"Desenvolvi a solução em Python e PySide6, integrada às APIs da NFS-e Nacional com certificado digital A1. Ela interpreta os extratos, consulta as notas, trata XMLs e gera o DANFSE quando necessário." },{ label:"03 · IMPACTO", title:"Um processo rastreável", copy:"O fluxo passou a ter mais velocidade, padronização e segurança operacional. Resultados, pendências e notas não encontradas ficam classificados, apoiando conferências e auditorias." },{ label:"04 · EVOLUÇÃO", title:"Validado com casos reais", copy:"A geração local do DANFSE foi refinada com uma bateria de 53 XMLs reais, incluindo 14 casos com desconto incondicionado, até reproduzir corretamente os dados fiscais disponíveis." }]} facts={[["Entrada","Extratos de faturamento em PDF"],["Fluxo","DPS → consulta autenticada → XML e DANFSE"],["Integração","API Nacional com certificado A1 e mTLS"],["Saída","Arquivos organizados e relatório em Excel"]]} highlights={["Parser tolerante para diferentes extratos em PDF","Manipulação de XML, Base64 e GZip","Geração local do DANFSE como alternativa ao download","Cache e classificação evitam retrabalho e duplicidade"]} tags={["Python","PySide6","API REST","mTLS","XML","PDF","Excel"]} repository="https://github.com/Mateuscs9/NFSe-Sync" />
         <div className="project-demo"><DemoNotice /><NfseSyncDemo /></div>
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="verified-projects-note"><span>DO PRODUTO AO PORTFÓLIO</span><p>Estas demos têm somente a intenção de apresentar uma prévia dos projetos. Todas as informações operacionais são fictícias. As interações são simulações locais, sem conexão com sistemas em produção, e não representam os sistemas completos.</p></div>
     </section>
 
-    <section className="contact-stage" id="contato"><p className="section-index">03 · CONTATO</p><h2>Vamos<br />conversar?</h2><p>Busco uma oportunidade como desenvolvedor remoto para contribuir com aplicações e automações que resolvam problemas reais. Quer conversar sobre uma vaga ou conhecer melhor meu trabalho? Entre em contato.</p><div className="contact-actions"><a className="button primary contact-button" href="mailto:mateus.costasouza.58@gmail.com"><span className="social-icon"><ContactIcon kind="email" /></span><span>Enviar e-mail</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button github-button" href="https://github.com/Mateuscs9" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="github" /></span><span>GitHub · Mateuscs9</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button linkedin-button" href="https://www.linkedin.com/in/mateus-costa-souza-2364642a7/" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="linkedin" /></span><span>LinkedIn</span><span className="contact-arrow" aria-hidden="true">↗</span></a></div><p className="contact-email"><a href="mailto:mateus.costasouza.58@gmail.com">mateus.costasouza.58@gmail.com</a></p></section>
+    <section className="contact-stage" id="contato"><p className="section-index">03 · CONTATO</p><h2>Vamos<br />conversar?</h2><p>Quer conversar sobre uma vaga ou conhecer melhor meu trabalho? Entre em contato.</p><div className="contact-actions"><a className="button primary contact-button" href="mailto:mateus.costasouza.58@gmail.com"><span className="social-icon"><ContactIcon kind="email" /></span><span>Enviar e-mail</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button github-button" href="https://github.com/Mateuscs9" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="github" /></span><span>GitHub · Mateuscs9</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button linkedin-button" href="https://www.linkedin.com/in/mateus-costa-souza-2364642a7/" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="linkedin" /></span><span>LinkedIn</span><span className="contact-arrow" aria-hidden="true">↗</span></a></div><p className="contact-email"><a href="mailto:mateus.costasouza.58@gmail.com">mateus.costasouza.58@gmail.com</a></p></section>
     <footer><span>Mateus Souza · Desenvolvedor Full Stack</span><span>© 2026</span></footer>
   </main>;
 }

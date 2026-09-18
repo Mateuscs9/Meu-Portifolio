@@ -44,3 +44,18 @@
 .project-narrative .demo-disclaimer { color:#98acc7; font:12px Arial,sans-serif; line-height:1.6; letter-spacing:.03em; }
 .verified-projects-note p { font-size:14px; }
 .availability { max-width:100%; width:fit-content; font-size:12px; line-height:1.5; }
+
+.about-intro { max-width:850px; margin:24px 0 0; color:#a8b5c9; font-size:22px; line-height:1.6; letter-spacing:-.02em; }
+@media(min-width:601px) {
+  body { font-size:18px; }
+  .identity b { font-size:14px; }
+  .topbar nav a,.button { font-size:13px; }
+  .hero-description { font-size:18px; }
+  .about-copy p,.contact-stage>p:not(.section-index) { font-size:17px; }
+  .projects-heading>p:last-child,.project-narrative>p,.project-storyline p,.demo-preview-notice p,.demo-preview-notice strong { font-size:16px; }
+  .project-storyline h4 { font-size:19px; }
+  .project-facts span { font-size:12px; }
+  .project-facts b,.engineering-highlights li,.skill-cloud span,.tag-list span { font-size:11px; }
+  .contact-actions .contact-button,.contact-email a,.repository-button,.verified-projects-note p { font-size:16px; }
+}
+@media(max-width:600px) { .about-intro { font-size:19px; } }

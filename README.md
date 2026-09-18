@@ -1,6 +1,6 @@
 # Meu Portifólio
 
-Portfólio pessoal para apresentar minha trajetória, meus projetos e meu objetivo de atuar como desenvolvedor remoto.
+Portfólio pessoal para apresentar minha trajetória e meus projetos como desenvolvedor.
 
 Comecei como técnico em eletrônica. Após concluir a faculdade, direcionei minha carreira para desenvolvimento. Atualmente trabalho na Atram, onde iniciei projetos de maneira proativa para resolver necessidades do dia a dia.
 
