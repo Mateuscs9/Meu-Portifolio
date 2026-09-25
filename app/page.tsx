@@ -8,14 +8,14 @@ const skills = ["Python", "JavaScript", "React", "Node.js", "SQL", "Automação"
 export default function Home() {
   return <main>
     <header className="topbar">
-      <a className="identity" href="#inicio" aria-label="Ir para o início"><span className="logo-mark">MS</span><b>Mateus Souza</b></a>
+      <a className="identity" href="#inicio" aria-label="Ir para o início"><span className="logo-mark">MS</span><b>Mateus Costa Souza</b></a>
       <nav aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a></nav>
     </header>
 
     <section className="hero-stage" id="inicio">
       <div className="hero-copy-block">
         <div className="availability"><i /> Disponível para novas oportunidades</div>
-        <p className="eyebrow">OLÁ, EU SOU MATEUS SOUZA</p>
+        <p className="eyebrow">OLÁ, EU SOU MATEUS COSTA SOUZA</p>
         <h1>Transformo<br /><span>problemas reais</span><br />em soluções digitais<br />que funcionam.</h1>
         <p className="hero-description">Desenvolvedor Full Stack com foco em aplicações e automações que simplificam o dia a dia.</p>
         <div className="hero-actions"><a className="button primary" href="#projetos">Explorar projetos <span>↓</span></a><a className="button secondary" href="#contato">Vamos conversar</a></div>
@@ -48,7 +48,7 @@ export default function Home() {
     </section>
 
     <section className="contact-stage" id="contato"><p className="section-index">03 · CONTATO</p><h2>Vamos<br />conversar?</h2><p>Quer conversar sobre uma vaga ou conhecer melhor meu trabalho? Entre em contato.</p><div className="contact-actions"><a className="button primary contact-button" href="mailto:mateus.costasouza.58@gmail.com"><span className="social-icon"><ContactIcon kind="email" /></span><span>Enviar e-mail</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button github-button" href="https://github.com/Mateuscs9" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="github" /></span><span>GitHub · Mateuscs9</span><span className="contact-arrow" aria-hidden="true">↗</span></a><a className="button secondary contact-button linkedin-button" href="https://www.linkedin.com/in/mateus-costa-souza-2364642a7/" target="_blank" rel="noopener noreferrer"><span className="social-icon"><ContactIcon kind="linkedin" /></span><span>LinkedIn</span><span className="contact-arrow" aria-hidden="true">↗</span></a></div><p className="contact-email"><a href="mailto:mateus.costasouza.58@gmail.com">mateus.costasouza.58@gmail.com</a></p></section>
-    <footer><span>Mateus Souza · Desenvolvedor Full Stack</span><span>© 2026</span></footer>
+    <footer><span>Mateus Costa Souza · Desenvolvedor Full Stack</span><span>© 2026</span></footer>
   </main>;
 }
 
